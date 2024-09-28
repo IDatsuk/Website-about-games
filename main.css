@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+.none {
+    display: none !important;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -50,6 +55,14 @@ header nav ul {
     z-index: 2;
     position: relative;
 } 
+
+/* НОВЫЙ УЧАСТОК КОДА */
+
+.nav-button {
+    display: none;
+}
+
+/* НОВЫЙ УЧАСТОК КОДА */
 
 header nav ul Li {
     display: inline-block;

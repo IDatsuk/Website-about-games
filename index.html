@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Website</title>
     <link rel="stylesheet" href="main.css">
-    <script src="Script.js"></script>   
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
 <div class="wrapper">
-    <header class="container">
-        <span class="logo">logo</span>
-           <nav>
-               <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">News</a></li>
-                    <li class="btn"><a href="contacts.html">Contacts</a></li>
-               </ul>
-           </nav>
+    <header class="container none1">
+        <span class="logo header__top-row none1">logo</span>
+           <div class="header__nav">
+
+               <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                     <li class="nav-item active"><a href="index.html">Home</a></li>
+                     <li class="nav-item"><a href="about.html">About us</a></li>
+                     <li class="nav-item"><a href="#">Portfolio</a></li>
+                     <li class="nav-item"><a href="#">News</a></li>
+                     <li class="btn"><a href="contacts.html">Contacts</a></li>
+                    </ul>
+
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./Images\nav\nav-open.svg" alt="Nav button">
+                    </button>
+
+                </nav>
+            </div>
     </header>
 
-    <div class="hero container">
+    <div class="hero container none">
         <div class="hero--info">
             <h2>3D game Dev</h2>
             <h1>Work that we produce for our clients</h1>
@@ -32,12 +40,12 @@
     <img src="Images/Joystick.svg" alt="Joystick">
     </div>
 
-    <div class="container trending">
+    <div class="container trending none">
 
       <a href="#" class="see-all">SEE ALL</a>
       <h3>Currently Trending Games</h3>
 
-      <div class="games">
+      <div class="games none">
          <div class="block">
              <img src="Images/Game1.png" alt="">
              <span><img src="Images/Fire.svg" alt=""> 40 Followers</span>
@@ -58,18 +66,18 @@
        </div>
     </div>
 
-    <div class="container big-text">
+    <div class="container big-text none">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
 
-    <div class="container banner">
+    <div class="container banner none">
         <h3>Lorem Ipsum</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
         <img src="Images/Game5.png" alt="">
     </div>
 </div>
 
-    <div class="features">
+    <div class="features none">
         <div class="container">
             <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
@@ -112,7 +120,7 @@
     </div>
 
     <div class="wrapper">
-        <div class="container project">
+        <div class="container project none">
                 <h3>Our Recent Projects</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <div class="images">
@@ -129,7 +137,7 @@
             <a href="" class="see-all">SEE ALL</a>
         </div>
 
-        <div class="container email">
+        <div class="container email none">
             <h3>Lorem Ipsum</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <div class="block">
@@ -153,7 +161,7 @@
 
     </div>
 
-    <footer>
+    <footer class= "none">
         <div class="blocks container">
             <div>
                 <span class="logo">LOGO</span>
@@ -184,6 +192,6 @@
         <hr>
         <p>Copyright ® 2021 Lorem All rights Recerved</p>
     </footer>
-
+    <script src="Script.js"></script> 
 </body>
 </html>
