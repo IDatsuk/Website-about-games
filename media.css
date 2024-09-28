@@ -18,9 +18,15 @@
     flex-direction: column;
     row-gap: 20px;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
+    justify-content: center;
+    height: 600px;
     }
-    
+
+    .nav.open .nav-list .nav-item a {
+        margin: 0 auto;
+    }
+
     .nav-button {
     position: absolute;
     z-index: 9;
@@ -31,4 +37,68 @@
     .nav.open .nav-button {
     position: fixed;
     }
+
+    .container {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    header .logo, footer .blocks .logo {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 25px 30px;
+    }
+
+    #Joystick {
+        display: none;
+    }
+
+    .hero--info{
+        max-width: 375px;
+        padding-top: 30px;
+        margin: 20px;
+    }
+    
+    .hero--info h2{
+        color: #E87D0E;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .hero--info h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+
+    .trending {
+        padding-top: 25px;
+    }
+
+    .trending .see-all {
+        color: #fff;
+        background: #25211d;
+        border-radius: 5px;
+        padding: 12px 23px;
+        float: right;
+        display: block;
+        margin-top: 100px;
+        margin-right: 200px;
+        transition: all 500ms ease;
+    }
+
+    .trending .games {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        justify-content: space-between;
+        width: 80%;
+        padding: 50px 10px;
+    
+    }
+
+
+
 }
+
