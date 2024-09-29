@@ -12,7 +12,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
     padding: 25px 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -21,7 +21,7 @@
     font-weight: 400;
     height: 50%;
     background-color: #000;
-    padding-bottom: 500px;
+    padding-bottom: 600px;
     padding-top: 100px;
     padding-left: 30%;
     }
