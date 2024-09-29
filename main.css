@@ -29,7 +29,7 @@ img {
 }
 
 .no-scroll {
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
 .container {
