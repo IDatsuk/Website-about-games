@@ -28,6 +28,10 @@ img {
     overflow-x: hidden;
 }
 
+.no-scroll {
+    overflow-y: hidden;
+  }
+
 .container {
     width: 1400px;
     margin: 0 auto;

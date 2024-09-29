@@ -12,7 +12,8 @@ const navBtnImg = document.querySelector('#nav-btn-img');
 navBtn.onclick = () => {
     if (nav.classList.toggle('open')) {
         navBtnImg.src = 'Images/nav/nav-close.svg';
+        document.body.classList.toggle('no-scroll');
     } else {
         navBtnImg.src ='Images/nav/nav-open.svg';
-    }
+    } 
 }

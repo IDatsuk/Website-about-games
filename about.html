@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Website</title>
-    <script src="Script.js"></script> 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
 <div class="wrapper">
-    <header class="container">
-        <span class="logo">logo</span>
-           <nav>
-               <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="/about.html">About us</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">News</a></li>
-                    <li class="btn"><a href="contacts.html">Contacts</a></li>
-               </ul>
-           </nav>
+    <header class="container none1">
+        <span class="logo header__top-row none1">logo</span>
+           <div class="header__nav">
+
+               <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                     <li class="nav-item active"><a href="index.html">Home</a></li>
+                     <li class="nav-item"><a href="about.html">About us</a></li>
+                     <li class="nav-item"><a href="#">Portfolio</a></li>
+                     <li class="nav-item"><a href="#">News</a></li>
+                     <li class="btn"><a href="contacts.html">Contacts</a></li>
+                    </ul>
+
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./Images\nav\nav-open.svg" alt="Nav button">
+                    </button>
+
+                </nav>
+            </div>
     </header>
 
     <div class="hero-about container">
@@ -58,12 +66,12 @@
 
     <footer>
         <div class="blocks container">
-            <div>
-                <span class="logo">LOGO</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="mobile_footer_div1">
+                <span class="logo logo_mobile">LOGO</span>
+                <p>Write to me in Tegram, the number is indicated in the resume</p>
             </div>
 
-            <div>
+            <div class="mobile_footer_div2">
                 <h4>About us</h4>
                 <ul>
                   <li>Zeux</li>
@@ -75,7 +83,7 @@
 
             <div>
                 <h4>Contact us</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Write to me in Tegram, the number is indicated in the resume</p>
                 <p>+908 89097 890</p>
 
 
@@ -87,7 +95,7 @@
         <hr>
         <p>Copyright ® 2021 Lorem All rights Recerved</p>
     </footer>
-
+    <script src="Script.js"></script> 
 
 
 </body>

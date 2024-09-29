@@ -12,15 +12,18 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
     padding: 25px 30px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     row-gap: 20px;
     font-size: 25px;
     font-weight: 400;
-    justify-content: center;
-    height: 600px;
+    height: 50%;
+    background-color: #000;
+    padding-bottom: 500px;
+    padding-top: 100px;
+    padding-left: 30%;
     }
 
     .nav.open .nav-list .nav-item a {
@@ -43,6 +46,11 @@
         margin: 0 auto;
     }
 
+    header {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        }
+
     header .logo, footer .blocks .logo {
         text-transform: uppercase;
         font-size: 25px;
@@ -52,6 +60,11 @@
 
     #Joystick {
         display: none;
+    }
+
+    .hero {
+        padding-bottom: 10px;
+       
     }
 
     .hero--info{
@@ -67,8 +80,20 @@
     }
     
     .hero--info h1{
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 600;
+    }
+
+    .mobile_tending {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .trending h3 {
+        font-weight: 400;
+        font-size: 25px;
+        width: 80%;
+        margin: 0 auto;
     }
     
 
@@ -81,11 +106,12 @@
         background: #25211d;
         border-radius: 5px;
         padding: 12px 23px;
-        float: right;
         display: block;
-        margin-top: 100px;
-        margin-right: 200px;
         transition: all 500ms ease;
+        text-align: center;
+        max-width: 100px;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .trending .games {
@@ -97,6 +123,285 @@
         padding: 50px 10px;
     
     }
+
+    .big-text {
+        padding: 20px 10px;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        width: 380px;
+    }
+
+    .banner {
+        padding: 40px 0;
+    
+    }
+    
+    .banner h3 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align:center;
+    }
+    
+    .banner p {
+        line-height: 170%;
+        margin-bottom: 20px;
+        width: 370px;
+        text-align: justify;
+        padding-left: 20px;
+    }
+
+    .features {
+        padding: 20px 0;
+    }
+    
+    .features_mobile {
+        max-width: 380px;
+    }
+
+    .features h3 {
+        font-size: 25px;
+    }
+
+    .features .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .project {
+        padding: 40px 0;
+        max-width: 380px;
+    }
+    
+    .project h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project p {
+        margin: 40px 0;
+        text-align: center;
+    }
+    
+    .project .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+
+    .email {
+        padding-bottom: 50px;
+        max-width: 380px;
+    
+    }
+
+    .email h3 {
+        margin-top: 30px;
+        font-size: 25px; 
+    
+    }
+
+    .email .block {
+        background: #1C140F;
+        margin-top: 30px;
+        border-radius: 10px;
+        padding: 40px 3%;
+        width: 94%;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        }
+        
+        .email .block h4 {
+        font-size: 30px;
+        font-weight: 400;
+        }
+        
+        .email .block p {
+            width: 360px;
+        }
+
+        .mobile_input {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .email .block input {
+            background: #fff;
+            outline: none;
+            border: 0;
+            border-radius: 5px;
+            width: 340px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            padding: 20px 30px;
+            position: relative;
+            right: 0px;
+            z-index: 1;
+            padding-right: 0px;
+        }
+
+        .mobile_button {
+            cursor: pointer;
+            border: 0;
+            padding: 12px 15px;
+            position:absolute;
+            z-index: 2;
+            color: #fff;
+            margin-left: -88px;
+        }
+
+        /* ABOUT US - MOBILE */
+
+        .hero-about {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        
+        .hero-about .info {
+            max-width: 380px;
+            padding: 30px 20px;
+        }
+        
+        .hero-about .info h1 {
+            margin-bottom: 15px;
+            font-size: 25px;
+        
+        }
+        
+        .hero-about .info .btn {
+            margin-top: 20px;
+        }
+        
+        .hero-about img {
+            position: sticky;
+        }
+
+        .work {
+            padding: 30px 0;
+        }
+        
+        .work h2 {
+            font-size: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .work .blocks {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        
+        .work .blocks .block {
+        width: 70%;
+        border-radius: 10px;
+        padding: 50px 35px;
+        background: #1C140F;
+        }
+
+        /* Contacts */
+
+        .hero-contacts {
+            max-width: 370px;
+        }
+
+        .hero-contacts h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+        
+        .hero-contacts p {
+            text-align: center;
+        }
+        
+        .hero-contacts img {
+            width: 70%;
+            margin: 80px 15%;
+        }
+        
+        .feedback {
+            padding: 30px 20px;
+            background: #1C140F;
+            max-width: 370px;
+        }
+
+        .feedback_mobile {
+            max-width: 370px;
+        }
+        .feedback h2 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 25px;
+        }
+
+        form {
+            max-width: 370px;
+        }
+
+        .feedback form .inline {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feedback form .inline > div {
+            width: 96%;
+            padding: 15px 10px;
+        }
+
+        .mobile_button_1 {
+            margin: 10px 100px;
+          }
+
+        /* FOOTER */
+
+        footer {
+            background: #000;
+            padding: 50px 0;
+            max-width: 370px;
+        }
+    
+        .mobile_footer_div1 {
+            display: none;
+        }
+        
+        .mobile_footer_div2 {
+            margin-left: 20px;
+        }
+
+        footer .blocks {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 370px;
+            gap: 10px;
+
+        }
+
+        footer .blocks p {
+            width: 190px;
+            margin: 15px 0;
+        }
+        
+        footer .blocks h4 {
+            font-weight: 400;
+            font-size: 17px;
+        }
+        
+ 
+
+        
+
+        
+
+        
+        
+       
+
 
 
 
